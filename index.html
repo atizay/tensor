@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -16,280 +20,231 @@
 <body>
   <div class="overlay"></div>
   <div class="app-wrapper">
-    <div class="contacts-bar">
-      <div class="contacts-list__header">
-        <button class="btn add-contacts">
-          <img src="img/add.png" alt="Add">
-        </button>
-      </div>
-      <ul class="contacts-list">
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
+    <div class="navbar">
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link menu-list__link_burger">
+            <i class="fas fa-bars"></i>
+          </a>
         </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link menu-list__link_dialogs">
+            <i class="far fa-comments"></i>
+          </a>
         </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link menu-list__link_add">
+            <i class="fas fa-plus"></i>
+          </a>
         </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
-        </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
-        </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
-        </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
-        </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
-        </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
-        </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
-        </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
-        </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
-        </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
-        </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
-        </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
-        </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
-        </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
-        </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
-        </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
-        </li>
-        <li class="contacts-list__item">
-          <img src="img/user.png" alt="" class="contacts-list__photo">
-          <div class="chat-info">
-            <h4 class="chat-info__name">Name Soname</h4>
-            <p class="chat-info__text">Message text...</p>
-          </div>
-          <time class="chat-info__time" datetime="2021-05-15 19:00">17:15</time>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">
+            <i class="fas fa-home"></i>
+          </a>
         </li>
       </ul>
     </div>
-    <div class="chat">
-      <div class="chat__header">
-        <img src="img/user.png" alt="John Fisher" class="chat__photo-user">
-        <h4>John Fisher</h4>
-
-        <ul class="options-list">
-          <li class="options-list__item">
-            <a href="#" class="options-list__link">
-              <img src="img/call.png" alt="Call">
-            </a>
+    <div class="dialog-bar">
+      <form action="#" class="dialog-bar__search">
+        <input type="text" placeholder="Поиск...">
+      </form>
+      <div class="dialogs-wrapper">
+        <ul class="dialog-list">
+          <li class="dialog-list__item dialog-list__item_active">
+            <div class="dialog-list__user">
+              <img src="img/user1.jpg" alt="Мария" class="dialog-list__photo">
+              <span class="dialog-list__status dialog-list__status_online"></span>
+            </div>
+            <div class="dialog-list__preview">
+              <h3 class="dialog-list__username">Мария Кустова</h3>
+              <p class="dialog-list__text">Главное, чтобы была возможность развиваться</p>
+            </div>
+            <span class="dialog-list__ago">01:05</span>
           </li>
-          <li class="options-list__item">
-            <a href="#" class="options-list__link">
-              <img src="img/video.png" alt="Call">
-            </a>
-          </li>
-          <li class="options-list__item">
-            <a href="#" class="options-list__link">
-              <img src="img/like.png" alt="Call">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="chat-wrapper">
-        <ul class="message-list">
-          <li class="message-list__item">
-            Text
-          </li>
-          <li class="message-list__item">
-            Text
-          </li>
-          <li class="message-list__item">
-            Text
-          </li>
-          <li class="message-list__item">
-            Text
-          </li>
-          <li class="message-list__item">
-            Text
-          </li>
-          <li class="message-list__item">
-            Text
-          </li>
-          <li class="message-list__item">
-            Text
-          </li>
-          <li class="message-list__item">
-            Text
-          </li>
-          <li class="message-list__item">
-            Text
-          </li>          
-          <li class="message-list__item">
-            Text
-          </li>
-          <li class="message-list__item">
-            Text
-          </li>
-          <li class="message-list__item">
-            Text
-          </li>
-          <li class="message-list__item">
-            Text
-          </li>
-          <li class="message-list__item">
-            Text
-          </li>
-          <li class="message-list__item">
-            Text
-          </li>
-          <li class="message-list__item">
-            Text
+          <li class="dialog-list__item">
+            <div class="dialog-list__user">
+              <img src="img/user1.jpg" alt="Мария" class="dialog-list__photo">
+              <span class="dialog-list__status dialog-list__status_offline"></span>
+            </div>
+            <div class="dialog-list__preview">
+              <h3 class="dialog-list__username">Мария Кустова</h3>
+              <p class="dialog-list__text">Главное, чтобы была возможность развиваться</p>
+            </div>
+            <span class="dialog-list__ago">14:22</span>
           </li>
         </ul>
-        <form action="#" class="dialog-form">
-          <input type="text" placeholder="Wrtie Message ...">
-          <button type="submit" class="btn">
-            <img src="img/send.png" alt="Send">
-          </button>
-        </form>
       </div>
     </div>
-    <div class="contact-info">
-      <img src="img/user.png" alt="Username" class="contact-info__photo">
-      <h4 class="contact-info__username">John Fisher</h4>
-      <ul class="options-list">
-        <li class="options-list__item">
-          <a href="#" class="options-list__link">
-            <img src="img/call.png" alt="Call">
+    <div class="chat-wrapper">
+      <div class="chat-header">
+        <p>Чат с пользователем: <span class="chat-header__current-user">Евгения Бедренцева</span></p>
+        <ul class="chat-options">
+          <li class="chat-options__item">
+            <a href="#" class="btn btn-option btn-option__call"></a>
+          </li>
+          <li class="chat-options__item">
+            <a href="#" class="btn btn-option btn-option__video"></a>
+          </li>
+          <li class="chat-options__item">
+            <a href="#" class="btn btn-option btn-option__more"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="chat-body">
+        <div class="chat">
+          <div class="chat__wrapper">
+            <div class="chat__message">
+              <div class="chat__user">
+                <img src="img/user1.jpg" alt="Мария" class="chat__photo">
+                <span class="chat__status chat__status_online"></span>
+                <span class="chat__ago">01:05</span>
+              </div>
+              <div class="chat__text-wrapper">
+                <p class="chat__text">
+                  Привет! Как дела?
+                </p>
+              </div>
+            </div>
+            <div class="chat__message">
+              <div class="chat__user">
+                <img src="img/user1.jpg" alt="Мария" class="chat__photo">
+                <span class="chat__status chat__status_online"></span>
+                <span class="chat__ago">01:05</span>
+              </div>
+              <div class="chat__text-wrapper">
+                <p class="chat__text">
+                  Привет! Как дела?
+                </p>
+              </div>
+            </div>
+            <div class="chat__message">
+              <div class="chat__user">
+                <img src="img/user1.jpg" alt="Мария" class="chat__photo">
+                <span class="chat__status chat__status_online"></span>
+                <span class="chat__ago">01:05</span>
+              </div>
+              <div class="chat__text-wrapper">
+                <p class="chat__text">
+                  Привет! Как дела?
+                </p>
+              </div>
+            </div>
+            <div class="chat__message">
+              <div class="chat__user">
+                <img src="img/user1.jpg" alt="Мария" class="chat__photo">
+                <span class="chat__status chat__status_online"></span>
+                <span class="chat__ago">01:05</span>
+              </div>
+              <div class="chat__text-wrapper">
+                <p class="chat__text">
+                  Привет! Как дела?
+                </p>
+              </div>
+            </div>
+            <div class="chat__message">
+              <div class="chat__user">
+                <img src="img/user1.jpg" alt="Мария" class="chat__photo">
+                <span class="chat__status chat__status_online"></span>
+                <span class="chat__ago">01:05</span>
+              </div>
+              <div class="chat__text-wrapper">
+                <p class="chat__text">
+                  Привет! Как дела?
+                </p>
+              </div>
+            </div>
+            <div class="chat__message">
+              <div class="chat__user">
+                <img src="img/user1.jpg" alt="Мария" class="chat__photo">
+                <span class="chat__status chat__status_online"></span>
+                <span class="chat__ago">01:05</span>
+              </div>
+              <div class="chat__text-wrapper">
+                <p class="chat__text">
+                  Привет! Как дела?
+                </p>
+              </div>
+            </div>
+            <div class="chat__message">
+              <div class="chat__user">
+                <img src="img/user1.jpg" alt="Мария" class="chat__photo">
+                <span class="chat__status chat__status_online"></span>
+                <span class="chat__ago">01:05</span>
+              </div>
+              <div class="chat__text-wrapper">
+                <p class="chat__text">
+                  Привет! Как дела?
+                </p>
+              </div>
+            </div>
+            <div class="chat__message chat__message_own">
+              <div class="chat__user">
+                <img src="img/user1.jpg" alt="Мария" class="chat__photo">
+                <span class="chat__status chat__status_online"></span>
+                <span class="chat__ago">01:05</span>
+              </div>
+              <div class="chat__text-wrapper">
+                <p class="chat__text">
+                  Привет! Как дела?
+                </p>
+              </div>
+            </div>
+            <div class="chat__message">
+              <div class="chat__user">
+                <img src="img/user1.jpg" alt="Мария" class="chat__photo">
+                <span class="chat__status chat__status_online"></span>
+                <span class="chat__ago">01:05</span>
+              </div>
+              <div class="chat__text-wrapper">
+                <p class="chat__text">
+                  Привет! Как дела?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="chat__form">
+          <form id="chat__form">
+            <input id="text-message" type="text" placeholder="Введите текст сообщения...">
+            <button class="btn btn_send" type="submit"><img src="img/icon-send.png" alt="Отправить"></button>
+          </form>
+        </div>
+
+
+
+
+        <!-- <div class="form-send">
+
+        </div> -->
+      </div>
+    </div>
+    <div class="contact-bar">
+      <img src="img/user1.jpg" alt="Евгения" class="contact-bar__photo">
+      <h4 class="contact-bar__name">
+        Евгения Бедренцева
+      </h4>
+      <ul class="socials">
+        <li class="socials__item">
+          <a href="#" class="social__link">
+            <img src="img/icon-tw.png" alt="Twitter">
           </a>
         </li>
-        <li class="options-list__item">
-          <a href="#" class="options-list__link">
-            <img src="img/video.png" alt="Call">
+        <li class="socials__item">
+          <a href="#" class="social__link">
+            <img src="img/icon-fb.png" alt="Facebook">
           </a>
         </li>
-        <li class="options-list__item">
-          <a href="#" class="options-list__link">
-            <img src="img/like.png" alt="Call">
+        <li class="socials__item">
+          <a href="#" class="social__link">
+            <img src="img/icon-inst.png" alt="Instagram">
           </a>
         </li>
       </ul>
     </div>
   </div>
-
   <div class="modal-popup">
     <div class="add-contacts-list__header">
       <h3>Choose contact</h3>
@@ -299,48 +254,31 @@
     </div>
     <ul class="add-contacts-list">
       <li class="add-contacts-list__item">        
-        <img src="img/user.png" alt="" class="add-contacts-list__photo">
-        <h4 class="add-contacts-list__name">Name Soname</h4>    
+        <img src="img/user1.jpg" alt="" class="add-contacts-list__photo">
+        <h4 class="add-contacts-list__name">Иванова Ольга</h4>    
       </li>
       <li class="add-contacts-list__item">        
-        <img src="img/user.png" alt="" class="add-contacts-list__photo">
-        <h4 class="add-contacts-list__name">Name Soname</h4>    
+        <img src="img/user1.jpg" alt="" class="add-contacts-list__photo">
+        <h4 class="add-contacts-list__name">Иванова Ольга</h4>    
       </li>
       <li class="add-contacts-list__item">        
-        <img src="img/user.png" alt="" class="add-contacts-list__photo">
-        <h4 class="add-contacts-list__name">Name Soname</h4>    
+        <img src="img/user1.jpg" alt="" class="add-contacts-list__photo">
+        <h4 class="add-contacts-list__name">Иванова Ольга</h4>    
       </li>
       <li class="add-contacts-list__item">        
-        <img src="img/user.png" alt="" class="add-contacts-list__photo">
-        <h4 class="add-contacts-list__name">Name Soname</h4>    
+        <img src="img/user1.jpg" alt="" class="add-contacts-list__photo">
+        <h4 class="add-contacts-list__name">Иванова Ольга</h4>    
       </li>
       <li class="add-contacts-list__item">        
-        <img src="img/user.png" alt="" class="add-contacts-list__photo">
-        <h4 class="add-contacts-list__name">Name Soname</h4>    
+        <img src="img/user1.jpg" alt="" class="add-contacts-list__photo">
+        <h4 class="add-contacts-list__name">Иванова Ольга</h4>    
       </li>
       <li class="add-contacts-list__item">        
-        <img src="img/user.png" alt="" class="add-contacts-list__photo">
-        <h4 class="add-contacts-list__name">Name Soname</h4>    
-      </li>
-      <li class="add-contacts-list__item">        
-        <img src="img/user.png" alt="" class="add-contacts-list__photo">
-        <h4 class="add-contacts-list__name">Name Soname</h4>    
-      </li>
-      <li class="add-contacts-list__item">        
-        <img src="img/user.png" alt="" class="add-contacts-list__photo">
-        <h4 class="add-contacts-list__name">Name Soname</h4>    
-      </li>
-      <li class="add-contacts-list__item">        
-        <img src="img/user.png" alt="" class="add-contacts-list__photo">
-        <h4 class="add-contacts-list__name">Name Soname</h4>    
-      </li>
-      <li class="add-contacts-list__item">        
-        <img src="img/user.png" alt="" class="add-contacts-list__photo">
-        <h4 class="add-contacts-list__name">Name Soname</h4>    
+        <img src="img/user1.jpg" alt="" class="add-contacts-list__photo">
+        <h4 class="add-contacts-list__name">Иванова Ольга</h4>    
       </li>
     </ul>
   </div>
-
   <script defer src="js/main.js"></script>
 </body>
 </html>

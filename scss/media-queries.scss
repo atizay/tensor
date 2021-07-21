@@ -7,18 +7,22 @@
 @media screen and (max-width: 1024px) {
 
 
-  .contacts-bar {
-    width: 40%;
-  }
+  // .contacts-bar {
+  //   width: 40%;
+  // }
 
-  .chat {
-    width: 60%;
+  // .chat {
+  //   width: 60%;
 
-  }
+  // }
 
 
-  .contact-info {
+  .contact-bar {
     display: none;
+  }
+
+  .chat-wrapper {
+    width: 80%;
   }
   
 
@@ -36,10 +40,32 @@
 /* 576 - 768 px */
 @media screen and (max-width: 768px) {
 
+  
+
+  .dialog-bar {
+    display: none;
+    position: absolute;
+    min-width: 320px;
+    left: 60px;
+    z-index: 1;
+  }
+
+  .chat-wrapper {
+    width: 100%;
+  }
+
 
 }
 
 @media screen and (max-width: 576px) {
+
+  .chat-header {
+    font-size: 14px;
+  }
+
+  .chat__message {
+    max-width: 80%;
+  }
  
   
 }
