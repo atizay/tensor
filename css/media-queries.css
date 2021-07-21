@@ -1,0 +1,12 @@
+/* 992 - 1200 px */
+@media screen and (max-width: 1024px) {
+  .contacts-bar {
+    width: 40%; }
+
+  .chat {
+    width: 60%; }
+
+  .contact-info {
+    display: none; } }
+/* 768 - 992 px */
+/* 576 - 768 px */

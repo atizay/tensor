@@ -1,0 +1,220 @@
+::-webkit-scrollbar {
+  display: none; }
+
+body {
+  font-family: 'Times New Roman', sans-serif; }
+
+h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 15px; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+.btn {
+  outline: none;
+  background: none;
+  border: none; }
+
+.app-wrapper {
+  display: flex;
+  height: calc(100vh - 4px);
+  border: 2px solid #bdbdbd; }
+
+.contacts-bar {
+  width: 20%;
+  border-right: 2px solid #bdbdbd; }
+
+.add-contacts {
+  display: block;
+  cursor: pointer;
+  margin-left: auto; }
+  .add-contacts img {
+    width: 24px;
+    height: 24px; }
+
+.options-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .options-list__item:not(:last-child) {
+    margin-right: 12px; }
+  .options-list__item img {
+    width: 24px; }
+
+.chat {
+  width: 60%;
+  position: relative; }
+  .chat__header {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    display: flex;
+    padding: 8px;
+    border-bottom: 2px solid #bdbdbd; }
+    .chat__header .options-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      margin-left: auto; }
+  .chat__photo-user {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px; }
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  padding: 10px 10px 12px 10px;
+  border-left: 2px solid #bdbdbd; }
+  .contact-info__photo {
+    width: 140px;
+    border-radius: 50px; }
+  .contact-info__username {
+    margin: 12px auto; }
+  .contact-info .options-list {
+    display: flex; }
+
+.contacts-list {
+  height: calc(100% - 60px);
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .contacts-list__header {
+    height: 40px;
+    display: flex;
+    padding: 8px;
+    border-bottom: 2px solid #bdbdbd; }
+  .contacts-list__item {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom: 2px solid #bdbdbd; }
+  .contacts-list__photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 12px; }
+
+.chat-info {
+  width: 100%;
+  margin-right: 12px; }
+  .chat-info__name {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 15px; }
+  .chat-info__text {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 12px; }
+  .chat-info__time {
+    display: flex;
+    align-self: flex-end;
+    font-size: 12px; }
+
+.chat-wrapper {
+  height: calc(100% - 124px);
+  overflow-y: scroll;
+  padding: 12px 12px 0 12px; }
+  .chat-wrapper .message-list {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .chat-wrapper .message-list__item {
+      max-width: 60%;
+      height: auto;
+      padding: 8px 12px;
+      font-size: 14px;
+      background-color: #fff;
+      color: grey;
+      border: 1px solid grey;
+      border-radius: 8px;
+      margin-bottom: 12px; }
+      .chat-wrapper .message-list__item:nth-child(odd) {
+        margin-left: auto;
+        border: 1px solid #12cdd4;
+        background-color: #12cdd4;
+        color: #fff; }
+      .chat-wrapper .message-list__item:not(:last-child) {
+        margin-bottom: 12px; }
+  .chat-wrapper .dialog-form {
+    position: absolute;
+    height: 40px;
+    left: 0;
+    bottom: 0;
+    width: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-top: 2px solid #bdbdbd;
+    background-color: #fff; }
+    .chat-wrapper .dialog-form input {
+      border: 1px solid grey;
+      width: 100%;
+      margin-right: 12px;
+      height: 24px;
+      border-radius: 8px;
+      padding-left: 12px; }
+    .chat-wrapper .dialog-form img {
+      width: 24px;
+      height: 24px; }
+
+.close-modal {
+  cursor: pointer; }
+  .close-modal img {
+    width: 24px;
+    height: 24px; }
+
+.add-contacts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 200px;
+  overflow-y: scroll; }
+  .add-contacts-list__item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-top: 2px solid #bdbdbd; }
+  .add-contacts-list__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #bdbdbd;
+    padding: 12px;
+    height: 40px; }
+  .add-contacts-list__photo {
+    width: 24px;
+    height: 24px; }
+  .add-contacts-list__name {
+    margin-left: 12px; }
+
+.overlay {
+  background-color: rgba(46, 46, 46, 0.5);
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
+.modal-popup {
+  position: absolute;
+  display: none;
+  left: 50%;
+  top: 40px;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 266px;
+  background-color: #f0f0f0;
+  z-index: 2; }
+
+.show {
+  display: block; }
+
+.hide {
+  display: none; }
